@@ -10,7 +10,7 @@ COPY requirements.txt requirements.txt
 
 # Installing the dependencies specified in the requirements.txt file
 # This command is failing because the package manager is being called "pip3" instead of "pip"
-RUN pip install -r requirements.txt
+RUN pip3 install -r requirements.txt
 
 # Copying all files from the current directory to the working directory
 COPY . .
